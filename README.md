@@ -7,6 +7,22 @@ Here is the complete step by step documentation which will describe how the solu
 
 ```sh
 $ Installation of the Docker-compose and docker tools on public cloud like AWS.
+yum update -y
+
+yum install docker -y
+
+service docker start
+
+chkconfig docker on
+
+docker --version
+
+curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
+
+chmod +x docker-compose-linux-x86_64
+
+sudo docker-compose --version
+
 $ git clone https://github.com/heroku/node-js-getting-started.git #  clone your own fork. add code into this local repo
 
 1. Set up a virtual machine on AWS cloud  and install Docker and Docker Compose utility.
@@ -29,12 +45,14 @@ After executing the "docker-compose up -d" command, all the created containers s
 
 ```
 
-NodeJS app running on Heroku platform -  http://$IP:5000/
+NodeJS app running on Heroku platform -  http://3.231.53.12:5000/
 
 Your app should now be running on - 
 
+![image](https://github.com/emanjoh1/devops-nodejs-assessment/assets/112668324/2148621c-f2c6-405c-9020-3ac6496943e2)
 
-Deployed Node JS application logs are available on - http://$IP:3000/
+
+Deployed Node JS application logs are available on - http://3.231.53.12:3000/
 
 
 
