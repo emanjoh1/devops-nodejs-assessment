@@ -54,6 +54,11 @@ Your app should now be running on -
 
 Deployed Node JS application logs are available on - http://3.231.53.12:3000/
 
+![image](https://github.com/emanjoh1/devops-nodejs-assessment/assets/112668324/7577b174-21b7-4a00-a44c-f46a2dfd9d0b)
+
+![image](https://github.com/emanjoh1/devops-nodejs-assessment/assets/112668324/01731eca-698e-448b-8b44-b717e024efbf)
+
+
 
 
 # Documentation for the Dockerfile
