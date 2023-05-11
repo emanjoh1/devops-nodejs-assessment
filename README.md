@@ -78,15 +78,21 @@ networks: This top-level section defines the networks used by the application. T
 
 
 
-###Coding Problem for wordy Numbers ###
+###Python Coding Problem for wordy Numbers ###
 
+Number Conversion Script
+This Python script prints numbers from 0 to 100 and converts every tenth number to its wordy version.
 
+Function
+convert_to_word(num) function is defined to convert the tenth numbers to its wordy version.
+
+Main Code
+In the main code block, a for loop is used to iterate over the numbers from 0 to 100. If the current number is a multiple of 10, the convert_to_word(num) function is called to convert the number into its wordy version and print it. Otherwise, the number is simply printed.
 
 
 ## Output of the task:- 
 
-### Link paste:-
-
+![image](https://github.com/emanjoh1/devops-nodejs-assessment/assets/112668324/46cdae45-dc0b-48fe-a408-62ae7ecd4acf)
 
 
 ## Reference Documentation
