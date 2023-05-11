@@ -38,7 +38,7 @@ Deployed Node JS application logs are available on - http://$IP:3000/
 
 
 
-##### Documentation for the Dockerfile #####
+# Documentation for the Dockerfile
 
 The initial line of the Dockerfile mentions the source image that we're utilizing, which is the official Node.js runtime image based on Alpine Linux.
 
@@ -52,7 +52,7 @@ Subsequently, we configure the environmental variables for the application, such
 
 Finally, we expose port 5000 (the default application port) and start the application by executing the npm start command.
 
-##### Documentation for the Docker-Compose #####
+# Documentation for the Docker-Compose 
 
 The docker-compose file includes four services: nodejs, promtail, loki, and grafana. The nodejs service is built using the Dockerfile from earlier and is configured to run in the production environment on port 5000. The logging for the application is set up to send logs to Loki.
 
@@ -77,25 +77,24 @@ promtail: This service uses an official Promtail image and attaches to the loki 
 networks: This top-level section defines the networks used by the application. The app network is used by all services and is created with the specified name.
 
 
+# Python Coding Problem for wordy Numbers
 
-###Python Coding Problem for wordy Numbers ###
-
-Number Conversion Script
+# Number Conversion Script
 This Python script prints numbers from 0 to 100 and converts every tenth number to its wordy version.
 
-Function
+# Function
 convert_to_word(num) function is defined to convert the tenth numbers to its wordy version.
 
-Main Code
+# Main Code
 In the main code block, a for loop is used to iterate over the numbers from 0 to 100. If the current number is a multiple of 10, the convert_to_word(num) function is called to convert the number into its wordy version and print it. Otherwise, the number is simply printed.
 
 
-## Output of the task:- 
+# Output of the task:- 
 
 ![image](https://github.com/emanjoh1/devops-nodejs-assessment/assets/112668324/46cdae45-dc0b-48fe-a408-62ae7ecd4acf)
 
 
-## Reference Documentation
+# Reference Documentation
 
 - [Best Practices for writing dockerfile](https://devcenter.heroku.com/articles/node-websocketshttps://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [Best Practices for DOCKER Compose](https://docs.docker.com/develop/dev-best-practices/)
